@@ -253,15 +253,17 @@ article {
 }
 
 .hide {
-  box-sizing: border-box;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
   background: transparent;
 }
 
 .hide button{
   padding: 0.5rem 2rem;
-  align-self: center;
+  align-self: top;
   display: block;
-  justify-self: center;
+  justify-self: top;
   position: relative;
   font-size: 1rem;
   background: var(--clr-grey-1);

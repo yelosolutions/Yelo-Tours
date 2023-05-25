@@ -19,9 +19,9 @@ const Tour = ({id, image, name, info}) => {
         </article>
     );
     }
-    return <div key={id} className="hide">
+    return <article key={id} className="hide">
         <button className='undo' onClick={() => setIsVisible(!isVisible)}>Undo</button>
-    </div>
+    </article>
 
     
     

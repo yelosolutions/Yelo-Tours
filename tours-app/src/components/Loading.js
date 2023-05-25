@@ -1,19 +1,13 @@
 import React from 'react';
-import Tour from './tour'
 
 
-const MainMenu = () => {
+const Loading = () => {
     
     return (
-        <>
         <div className="loading">
-            <div className="title">
-                <h2>Yelo Tours</h2>
-            </div>
+            <h2>Loading ...</h2>
         </div>
-        <Tour/>
-        </>
     )
 };
 
-export default MainMenu;
+export default Loading;

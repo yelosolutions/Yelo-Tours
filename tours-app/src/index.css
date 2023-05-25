@@ -252,6 +252,30 @@ article {
   margin-bottom: 0.5rem;
 }
 
+.hide {
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.hide button{
+  padding: 0.5rem 2rem;
+  align-self: center;
+  display: block;
+  justify-self: center;
+  position: relative;
+  font-size: 1rem;
+  background: var(--clr-grey-1);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  color: #fff;
+}
+
+.hide button :hover {
+  background: var(--clr-primary-1);
+  box-shadow: var(--light-shadow);
+  transition: all ease 300ms;
+}
+
 .tour-price {
   color: var(--clr-primary-5);
   background: var(--clr-primary-10);

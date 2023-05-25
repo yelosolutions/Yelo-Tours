@@ -12,6 +12,11 @@ const App = () => {
 
   // let newTours = tours.filter((tour) => tour.id !== id);
 
+  const removeTour = (id) => {
+      let newTours = tours.filter((tour) => tour.id !== id);
+      setTours(newTours);
+  };
+
 
   const getTours = async () => {
     setLoading(true);
@@ -49,7 +54,7 @@ const App = () => {
   }
   return (
     <main>
-      <Tours tours={tours}/>
+      <Tours tours={tours} removeTour={removeTour} />
     </main>
   );
 }

@@ -138,12 +138,7 @@ p {
 
 /*  global classes */
 
-/* section */
-.section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
+
 
 @media screen and (min-width: 992px) {
   .section {
@@ -171,9 +166,26 @@ Tours
 ===============
 */
 main {
+  width: 98vw;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* section */
+section {
   width: 90vw;
+  margin: 0 auto;
   max-width: var(--fixed-width);
-  margin: 5rem auto;
+  max-width: var(--max-width);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+
+article {
+  text-align: center;
+  align-items: center;
 }
 
 .loading {
@@ -199,6 +211,8 @@ main {
   margin: 2rem 0;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
+  align-items: center;
+  justify-content: center;
 }
 
 .single-tour:hover {
@@ -214,10 +228,10 @@ main {
 }
 
 .tour-info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .tour-info h4 {
@@ -226,12 +240,16 @@ main {
 
 .single-tour button {
   background: transparent;
-  border-color: transparent;
+  border-color: var(--clr-green-dark);
+  border-radius: var(--radius);
+  border-width: 2px 2px 2px 2px;
   text-transform: capitalize;
-  color: var(--clr-primary-5);
-  font-size: 1rem;
+  color: var(--clr-green-dark);
+  font-size: 0.7rem;
   cursor: pointer;
-  padding-left: 0.25rem;
+  padding: 0.25rem 2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 
 .tour-price {

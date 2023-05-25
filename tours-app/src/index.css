@@ -138,7 +138,12 @@ p {
 
 /*  global classes */
 
-
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
 
 @media screen and (min-width: 992px) {
   .section {
@@ -166,26 +171,9 @@ Tours
 ===============
 */
 main {
-  width: 98vw;
-  margin: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-/* section */
-section {
   width: 90vw;
-  margin: 0 auto;
   max-width: var(--fixed-width);
-  max-width: var(--max-width);
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: auto auto auto;
-}
-
-article {
-  text-align: center;
-  align-items: center;
+  margin: 5rem auto;
 }
 
 .loading {
@@ -211,8 +199,6 @@ article {
   margin: 2rem 0;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
-  align-items: center;
-  justify-content: center;
 }
 
 .single-tour:hover {
@@ -228,10 +214,10 @@ article {
 }
 
 .tour-info {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .tour-info h4 {
@@ -240,42 +226,12 @@ article {
 
 .single-tour button {
   background: transparent;
-  border-color: var(--clr-green-dark);
-  border-radius: var(--radius);
-  border-width: 2px 2px 2px 2px;
+  border-color: transparent;
   text-transform: capitalize;
-  color: var(--clr-green-dark);
-  font-size: 0.7rem;
-  cursor: pointer;
-  padding: 0.25rem 2rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-
-.hide {
-  margin: 2rem 0;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-
-.hide button{
-  padding: 0.5rem 2rem;
-  align-self: top;
-  display: block;
-  justify-self: top;
-  position: relative;
+  color: var(--clr-primary-5);
   font-size: 1rem;
-  background: var(--clr-grey-1);
-  border-radius: var(--radius);
-  box-shadow: var(--dark-shadow);
-  color: #fff;
-}
-
-.hide button :hover {
-  background: var(--clr-primary-1);
-  box-shadow: var(--light-shadow);
-  transition: all ease 300ms;
+  cursor: pointer;
+  padding-left: 0.25rem;
 }
 
 .tour-price {

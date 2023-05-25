@@ -14,13 +14,13 @@ const Tours = ( {tours} ) => {
         </div>
         <section>
         {tours.map((tour) => {
-
             return (
             <Tour 
                 id={tour.id} 
                 name={tour.name} 
                 image={tour.image} 
-                info={tour.info}>
+                info={tour.info}
+                price={tour.price}>
             </Tour>)
         })}
         

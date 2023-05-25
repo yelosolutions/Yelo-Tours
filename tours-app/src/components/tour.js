@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Tour = ({id, image, name, info}) => {
+const Tour = ({id, image, name, info, price}) => {
     const [isVisible, setIsVisible] = useState(true);
     
     // const removeTour = (id) => {
@@ -11,11 +11,15 @@ const Tour = ({id, image, name, info}) => {
         return (
         <article key={id} className="single-tour">
             <img src={image} alt="" />
-            <div className="tour-info">
-                <h5>{name}</h5>
+            <footer>
+                <div className="tour-info">
+                    <h4>{name}</h4>
+                    <h4 className='tour-price'>${price}</h4>
+                </div>
                 <p>{info}</p>
-            </div>
-            <button onClick={() => setIsVisible(!isVisible)}>Not Interested</button>
+                <button className='delete-btn' onClick={() => setIsVisible(!isVisible)}>Not Interested</button>
+            </footer>
+            
         </article>
     );
     }
@@ -23,8 +27,6 @@ const Tour = ({id, image, name, info}) => {
         <button className='undo' onClick={() => setIsVisible(!isVisible)}>Undo</button>
     </article>
 
-    
-    
 }
 
 export default Tour;
